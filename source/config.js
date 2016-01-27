@@ -5,8 +5,8 @@
 var secure = window.location.protocol === 'https:';
 
 module.exports = {
-    name:      'likely',
-    prefix:    'likely__',
+    name:      '[data-scl-share-box]',
+    prefix:    'c-social-share__',
     secure:    secure,
     protocol:  secure ? 'https:' : 'http:'
 };

@@ -31,8 +31,8 @@ var likely = function (node, options) {
  * Initiate Likely buttons on load
  */
 likely.initiate = likely.initate = function () {
-    var widgets = dom.findAll('.' + config.name);
-    
+    var widgets = dom.findAll(config.name);
+
     utils.toArray(widgets)
          .forEach(likely);
 };

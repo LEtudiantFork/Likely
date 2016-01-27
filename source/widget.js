@@ -90,22 +90,22 @@ Likely.prototype = {
             this.ready();
         }
     },
-    
+
     /**
      * Show the buttons with smooth animation
      */
     appear: function () {
-        this.container.classList.add(config.name + '_visible');
+        this.container.classList.add('is-visible');
     },
-    
+
     /**
      * Get. Set. Ready.
      */
     ready: function () {
         if (this.timeout) {
             clearTimeout(this.timeout);
-            
-            this.container.classList.add(config.name + '_ready');
+
+            this.container.classList.add('is-ready');
         }
     }
 };

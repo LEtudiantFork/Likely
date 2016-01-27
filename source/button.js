@@ -159,9 +159,9 @@ LikelyButton.prototype = {
      */
     updateCounter: function (counter) {
         counter = parseInt(counter, 10) || 0;
-        
-        var counterElement = dom.find('.' + config.name + '__counter', this.widget);
-        
+
+        var counterElement = dom.find('.' + config.prefix + '__counter', this.widget);
+
         if (counterElement) {
             counterElement.parentNode.removeChild(counterElement);
         }
